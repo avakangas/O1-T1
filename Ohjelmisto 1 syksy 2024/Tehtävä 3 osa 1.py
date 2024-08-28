@@ -1,5 +1,9 @@
-kpituus = int(input('Anna kuhan pituus: '))
+pituus = float(input("Anna kuhan pituus senttimetreinä: "))
 
-if kpituus <= 37:
-    print('Päästä kuha järveen kasvamaan kasvamaan, Kuhan on alamittainen jos se on alle 37cm')
+alamitta = 37.0
 
+if pituus < alamitta:
+    puuttuu = alamitta - pituus
+    print(f"Kuha on alamittainen. Laske kuha takaisin järveen. {puuttuu:.1f} cm puuttuu sallitusta pyyntimitasta.")
+else:
+    print("Kuha on sallittua pyyntikokoa.")
